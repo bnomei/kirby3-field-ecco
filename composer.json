@@ -1,0 +1,27 @@
+{
+  "name": "bnomei/kirby3-field-ecco",
+  "description": "Kirby 3 Field Method to ecco strings based on boolval of Field",
+  "type": "plugin",
+  "version": "1.0.0",
+  "license": "MIT",
+  "autoload": {
+      "files": [
+          "config.php"
+      ]
+  },
+  "authors": [
+      {
+          "name": "Bruno Meilick",
+          "email": "b@bnomei.com"
+      }
+  ],
+  "repositories": [
+  ],
+  "require": {
+  },
+  "scripts": {
+      "build": "composer update; composer dumpautoload -o;",
+      "zip": "rm kirby3-field-ecco.zip; composer remove getkirby/cms; composer dumpautoload -o; composer archive --format=zip --file=kirby3-field-ecco; composer dumpautoload -o;"
+  },
+  "minimum-stability": "beta"
+}
