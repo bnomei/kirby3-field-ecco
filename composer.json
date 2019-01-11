@@ -46,7 +46,7 @@
             "composer require getkirby/cms:'^3.0.0-RC-2.0'"
         ],
         "gitsubmodule" : [
-            "git checkout master",
+            "git checkout -f master",
             "composer install --no-dev",
             "composer remove getkirby/cms",
             "composer dumpautoload -o",
@@ -57,10 +57,10 @@
             "git commit -m 'Automated branch from composer skript'",
             "git status",
             "git stash",
-            "git checkout gitsubmodule",
+            "git checkout -f gitsubmodule",
             "git stash pop",
             "git push -u origin gitsubmodule",
-            "git checkout master"
+            "git checkout -f master"
         ]
     }
 }
