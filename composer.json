@@ -45,26 +45,6 @@
             "composer dumpautoload -o",
             "zip -r kirby3-field-ecco.zip . -x *.git*",
             "composer require getkirby/cms:'^3.0.0-RC-2.0'"
-<<<<<<< Updated upstream
-        ],
-        "gitsubmodule" : [
-            "git checkout -f master",
-            "composer install --no-dev",
-            "composer remove getkirby/cms",
-            "composer dumpautoload -o",
-            "sed 's/\/vendor/#\/vendor/g' < .gitignore > tmp; mv -f tmp .gitignore",
-            "echo wait for file write; sleep 1",
-            "echo add gitignore; git add -A",
-            "echo add vendor folder once gitignore is added; git add -A",
-            "git commit -m 'Automated branch from composer skript'",
-            "git status",
-            "git stash",
-            "git checkout -f gitsubmodule",
-            "git stash pop",
-            "git push -u origin gitsubmodule",
-            "git checkout -f master"
-=======
->>>>>>> Stashed changes
         ]
     }
 }
