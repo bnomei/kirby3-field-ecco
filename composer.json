@@ -45,6 +45,7 @@
             "composer dumpautoload -o",
             "zip -r kirby3-field-ecco.zip . -x *.git*",
             "composer require getkirby/cms:'^3.0.0-RC-2.0'"
+<<<<<<< Updated upstream
         ],
         "gitsubmodule" : [
             "git checkout -f master",
@@ -62,6 +63,8 @@
             "git stash pop",
             "git push -u origin gitsubmodule",
             "git checkout -f master"
+=======
+>>>>>>> Stashed changes
         ]
     }
 }
