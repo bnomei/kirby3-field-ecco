@@ -53,8 +53,8 @@
             "composer dumpautoload -o",
             "sed 's/vendor/#vendor/g' < .gitignore > tmp; mv -f tmp .gitignore",
             "git add -A",
-            "git commit -m \"Automated branch from composer skript\"",
-            "git push -u origin gitsubmodule",
+            "git commit -m 'Automated branch from composer skript'",
+            "git push --all",
             "sed 's/#vendor/vendor/g' < .gitignore > tmp; mv -f tmp .gitignore",
             "composer require getkirby/cms:'^3.0.0-RC-2.0'"
         ]
