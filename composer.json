@@ -30,8 +30,7 @@
         }
     ],
     "require": {
-        "php": ">=7.1.0",
-        "getkirby/cms": "^3.0.0-RC-2.0"
+        "php": ">=7.1.0"
     },
     "conflict": {
         "getkirby/kirby": "<3.0"
@@ -54,9 +53,11 @@
             "sed 's/vendor/#vendor/g' < .gitignore > tmp; mv -f tmp .gitignore",
             "git add -A",
             "git commit -m 'Automated branch from composer skript'",
+            "git stash",
+            "git checkout gitsubmodule",
+            "git stash pop",
             "git push --all",
-            "sed 's/#vendor/vendor/g' < .gitignore > tmp; mv -f tmp .gitignore",
-            "composer require getkirby/cms:'^3.0.0-RC-2.0'"
+            "git checkout master"
         ]
     }
 }
