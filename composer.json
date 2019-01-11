@@ -56,7 +56,7 @@
             "git stash",
             "git checkout gitsubmodule",
             "git stash pop",
-            "git push --all",
+            "git push -u origin gitsubmodule",
             "git checkout master"
         ]
     }
