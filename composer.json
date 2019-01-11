@@ -2,7 +2,7 @@
     "name": "bnomei/kirby3-field-ecco",
     "description": "Kirby 3 Field Method to ecco strings based on boolval of Field",
     "type": "plugin",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "MIT",
     "authors": [
         {
@@ -38,11 +38,23 @@
     },
     "scripts": {
         "zip": [
+            "touch kirby3-field-ecco.zip",
             "rm kirby3-field-ecco.zip",
             "composer install --no-dev",
             "composer remove getkirby/cms",
             "composer dumpautoload -o",
+            "sed 's/#vendor/vendor/g' < .gitignore > tmp; mv -f tmp .gitignore",
             "zip -r kirby3-field-ecco.zip . -x *.git*",
+            "composer require getkirby/cms:'^3.0.0-RC-2.0'"
+        ],
+        "gitsubmodule" : [
+            "composer install --no-dev",
+            "composer remove getkirby/cms",
+            "composer dumpautoload -o",
+            "sed 's/vendor/#vendor/g' < .gitignore > tmp; mv -f tmp .gitignore",
+            "git add -A && git commit -m \"Automated branch from composer skript\"",
+            "git push --all gitsubmodule",
+            "sed 's/#vendor/vendor/g' < .gitignore > tmp; mv -f tmp .gitignore",
             "composer require getkirby/cms:'^3.0.0-RC-2.0'"
         ]
     }
