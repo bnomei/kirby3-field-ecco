@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "44dc8c6cfa826463005d37ab17116b45",
+    "content-hash": "68121c6e3084cb941e684597c55538f6",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -108,30 +108,30 @@
         },
         {
             "name": "getkirby/cms",
-            "version": "3.0.0-RC-5.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/k-next/kirby.git",
-                "reference": "a82446a978b861b7ab9950d141392c22efd3b542"
+                "url": "https://github.com/getkirby/kirby.git",
+                "reference": "72f01eac0a7db59360894e0cfb44680276260174"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/k-next/kirby/zipball/a82446a978b861b7ab9950d141392c22efd3b542",
-                "reference": "a82446a978b861b7ab9950d141392c22efd3b542",
+                "url": "https://api.github.com/repos/getkirby/kirby/zipball/72f01eac0a7db59360894e0cfb44680276260174",
+                "reference": "72f01eac0a7db59360894e0cfb44680276260174",
                 "shasum": ""
             },
             "require": {
-                "claviska/simpleimage": "3.3.*",
+                "claviska/simpleimage": "3.3.3",
                 "ext-ctype": "*",
                 "ext-mbstring": "*",
-                "filp/whoops": "2.3.*",
+                "filp/whoops": "2.3.1",
                 "getkirby/composer-installer": "*",
-                "michelf/php-smartypants": "1.8.*",
-                "mustangostang/spyc": "0.6.*",
+                "michelf/php-smartypants": "1.8.1",
+                "mustangostang/spyc": "0.6.2",
                 "php": ">=7.1.0",
-                "phpmailer/phpmailer": "6.0.*",
-                "true/punycode": "2.1.*",
-                "zendframework/zend-escaper": "2.6.*"
+                "phpmailer/phpmailer": "6.0.6",
+                "true/punycode": "2.1.1",
+                "zendframework/zend-escaper": "2.6.0"
             },
             "type": "kirby-cms",
             "autoload": {
@@ -147,23 +147,7 @@
                     "Kirby\\": "src/"
                 }
             },
-            "scripts": {
-                "analyze": [
-                    "phpstan analyse src"
-                ],
-                "test": [
-                    "phpunit --stderr --coverage-html=tests/coverage"
-                ],
-                "zip": [
-                    "composer archive --format=zip --file=dist"
-                ],
-                "build": [
-                    "./scripts/build"
-                ],
-                "fix": [
-                    "php-cs-fixer fix ."
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -181,13 +165,7 @@
                 "core",
                 "kirby"
             ],
-            "support": {
-                "email": "support@getkirby.com",
-                "issues": "https://github.com/getkirby/kirby/issues",
-                "forum": "https://forum.getkirby.com",
-                "source": "https://github.com/getkirby/kirby"
-            },
-            "time": "2019-01-11T15:23:48+00:00"
+            "time": "2019-01-15T08:15:26+00:00"
         },
         {
             "name": "getkirby/composer-installer",

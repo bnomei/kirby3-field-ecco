@@ -2,7 +2,7 @@
     "name": "bnomei/kirby3-field-ecco",
     "description": "Kirby 3 Field Method to ecco strings based on boolval of Field",
     "type": "plugin",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "license": "MIT",
     "authors": [
         {
@@ -10,6 +10,11 @@
             "email": "b@bnomei.com"
         }
     ],
+    "autoload": {
+        "files": [
+            "config.php"
+        ]
+    },
     "keywords": [
         "kirby3",
         "kirby3-cms",
@@ -23,12 +28,6 @@
         "optimize-autoloader": true,
         "sort-packages": true
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/k-next/kirby"
-        }
-    ],
     "require": {
         "php": ">=7.1.0",
         "getkirby/cms": "^3.0.0-RC-2.0"
