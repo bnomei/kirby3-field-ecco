@@ -2,7 +2,6 @@
 
 $finder = PhpCsFixer\Finder::create()
     ->exclude('vendor')
-    ->exclude('kirby')
     ->in(__DIR__)
 ;
 
