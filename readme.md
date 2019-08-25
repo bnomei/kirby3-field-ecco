@@ -1,6 +1,11 @@
 # Kirby 3 Field Ecco
 
-![GitHub release](https://img.shields.io/github/release/bnomei/kirby3-field-ecco.svg?maxAge=1800) ![License](https://img.shields.io/github/license/mashape/apistatus.svg) ![Kirby Version](https://img.shields.io/badge/Kirby-3-black.svg) ![Kirby 3 Pluginkit](https://img.shields.io/badge/Pluginkit-YES-cca000.svg) [![Gitter](https://badges.gitter.im/bnomei-kirby-3-plugins/community.svg)](https://gitter.im/bnomei-kirby-3-plugins/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+![Release](https://flat.badgen.net/packagist/v/bnomei/kirby3-field-ecco?color=ae81ff)
+![Stars](https://flat.badgen.net/packagist/ghs/bnomei/kirby3-field-ecco?color=272822)
+![Downloads](https://flat.badgen.net/packagist/dt/bnomei/kirby3-field-ecco?color=272822)
+![Issues](https://flat.badgen.net/packagist/ghi/bnomei/kirby3-field-ecco?color=e6db74)
+[![Gitter](https://flat.badgen.net/badge/gitter/chat?color=982ab3)](https://gitter.im/bnomei-kirby-3-plugins/community) 
+[![Twitter](https://flat.badgen.net/badge/twitter/bnomei?color=66d9ef)](https://twitter.com/bnomei)
 
 Kirby 3 Field Method to ecco strings based on boolval of Field.
 
