@@ -6,7 +6,7 @@
 
 Kirby 3 Field Method to ecco strings based on boolval of Field.
 
-## Commerical Usage
+## Commercial Usage
 
 > <br>
 > <b>Support open source!</b><br><br>
