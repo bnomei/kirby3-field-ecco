@@ -8,7 +8,7 @@ Kirby::plugin('bnomei/field-ecco', [
             if ($field->isEmpty()) {
                 return $b;
             }
-            return $field->toBool() ? $a : $b;
+            return empty($field->value()) || strtolower($field->value()) === 'false' ? $b : $a;
         }
     ]
 ]);
