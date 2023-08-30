@@ -4,7 +4,7 @@
 ![Downloads](https://flat.badgen.net/packagist/dt/bnomei/kirby3-field-ecco?color=272822)
 [![Twitter](https://flat.badgen.net/badge/twitter/bnomei?color=66d9ef)](https://twitter.com/bnomei)
 
-Kirby 3 Field Method to ecco strings based on boolval of Field.
+Kirby 3 Field Method to ecco strings based on boolval/isEmpty of a Field.
 
 ## Commercial Usage
 
@@ -32,12 +32,14 @@ in php code
 
 ```php
 echo $page->myBoolField()->ecco('Yes please. 👍', 'OMG NO! 👎');
+echo $page->selectField()->ecco('has a value', 'is empty');
 ```
 
 or in blueprint template language
 
 ```yml
 {{ page.myBoolField.ecco('Yes please. 👍', 'OMG NO! 👎') }}
+{{ page.selectField.ecco('has a value', 'is empty') }}
 ```
 
 ## Disclaimer
