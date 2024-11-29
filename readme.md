@@ -1,3 +1,6 @@
+> [!TIP]
+> This plugin has been merged with Janitor.
+
 # Kirby Field Ecco
 
 ![Release](https://flat.badgen.net/packagist/v/bnomei/kirby3-field-ecco?color=ae81ff)
